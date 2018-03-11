@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="tea" class="Tea"></bean>
+
+    <!--<bean name="restaurant1" class="Restaurant1" autowire="byName"/>-->
+    <!--<bean name="restaurant1" class="Restaurant1" autowire="byType"/>-->
+    <!--<bean name="restaurant1" class="Restaurant1" autowire="constructor"/>-->
+
+    <bean name="restaurant1" class="Restaurant1"/>
+
+
+</beans>

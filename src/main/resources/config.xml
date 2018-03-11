@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+    <bean id="database" class="Database">           
+        <property name="name" value="Spring"/>
+        <property name="port" value="2020"/>
+    </bean>
+
+    <bean id="tea" class="Tea"></bean>
+    <bean id="expressTea" class="ExpressTea"></bean>
+
+    <bean name="teaRestaurant" class="Restaurant" scope="prototype">
+        <property name="hotDrink" ref="tea"/>
+    </bean>
+
+    <bean name="expressTeaRestaurant" class="Restaurant">
+        <property name="hotDrink">
+            <bean id="expressTea1" class="ExpressTea"></bean>
+        </property>
+    </bean>
+
+    <bean name="complexBean" class="Complex">
+        <property name="list">
+            <list>
+                <value>l1</value>
+                <value>l2</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>s1</value>
+                <value>s2</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="k1" value="v1"/>
+                <entry key="k2" value="v2"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>
