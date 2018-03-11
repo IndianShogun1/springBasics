@@ -27,3 +27,16 @@ complexBean. Get the bean and display the properties.
 
 10. Use @Component, @Controller, @Repository etc annotation to configure Tea and Restaurant in Spring Container.
 
+
+
+Questions 1 through 5 are answered in config.xml and classes Application.java, Database.java, Restaurant.java, HotDrink.java, Tea.java, ExpressTea.java and Complex.java.
+
+Question 6 is demonstrated through config1.xml, Restaurant1.java and Application1.java.
+
+Question 7 is demonstrated through the same files and classes as questions 1 to 5.
+
+Question 8 is demonstrated through Restaurant.java.
+
+Question 9 is demonstrated through config2.xml, Restaurant2.java and Application2.java.
+
+Question 10 is demonstrated through classes in package ques10 and config.xml.
