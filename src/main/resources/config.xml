@@ -7,7 +7,7 @@
 
     <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
 
-    <bean id="database" class="Database">           
+    <bean id="database" class="Database">
         <property name="name" value="Spring"/>
         <property name="port" value="2020"/>
     </bean>

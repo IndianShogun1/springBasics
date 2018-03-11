@@ -8,6 +8,7 @@ public class Restaurant1 {
         return tea;
     }
 
+//    @Autowired
     public void setTea(HotDrink tea) {
         this.tea = tea;
     }
@@ -19,6 +20,7 @@ public class Restaurant1 {
                 '}';
     }
 
+    @Autowired
     public Restaurant1(HotDrink tea) {
         this.tea = tea;
     }
